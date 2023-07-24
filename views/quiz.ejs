@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mani's Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz</h1>
+      <div class="reg">
+        <div id="user-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+
+          <label for="clas">Class:</label>
+          <input type="text" id="clas" required />
+
+          <button type="submit" id="submit">Start Quiz</button>
+        </div>
+      </div>
+      <div class="contentt">
+        <div id="quiz">
+          <div class="progress-bar">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+          </div>
+          <div class="question">
+            <p id="qn"><strong>Loading question...</strong></p>
+            <input
+              type="text"
+              id="tex"
+              name="q1"
+              placeholder="Enter your answer"
+            />
+          </div>
+        </div>
+        <button id="submit-btn">Submit</button>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
